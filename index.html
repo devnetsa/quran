@@ -1,0 +1,18 @@
+---
+layout: default
+
+---
+
+<div class="home">
+  
+  <ul>
+  {% for ayah in site.data.ayas %}
+    <li>
+        {{ ayah.text }}
+    </li>
+  {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
