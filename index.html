@@ -1,16 +1,22 @@
 ---
 layout: default
-
+title: "الفاتحة"
 ---
 
-<div class="home">
+  <div class="header">
 
-  <div>
-  {% for ayah in site.data.ayas %}
-    <div>
+  </div>
+
+  <div class="page">
+    <div class="sura">
+      {% for ayah in site.data.ayas %}
+      <span class="ayah">
         {{ ayah.text }}
-    </div>
-  {% endfor %}
-</div>
+      </span>
+      <div class="ayah-no">
 
+        {{ ayah.ayah}}
+      </div>
+      {% endfor %}
+    </div>
 </div>
