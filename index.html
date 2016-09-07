@@ -1,18 +1,22 @@
 ---
 layout: default
-
+title: "الفاتحة"
 ---
 
-<div class="home">
-  
-  <ul>
-  {% for ayah in site.data.ayas %}
-    <li>
+  <div class="header">
+
+  </div>
+
+  <div class="page">
+    <div class="sura">
+      {% for ayah in site.data.ayas %}
+      <span class="ayah">
         {{ ayah.text }}
-    </li>
-  {% endfor %}
-  </ul>
+      </span>
+      <div class="ayah-no">
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+        {{ ayah.ayah}}
+      </div>
+      {% endfor %}
+    </div>
 </div>
