@@ -3,16 +3,28 @@
 
 @font-face
   font-family: "othmany"
-  src: url("fonts/uthmanic.woff") format("woff")
+  src:  url("fonts/uthmanic.otf") format("otf"), url("fonts/uthmanic.woff") format("woff")
+@font-face
+  font-family: "me quran"
+  font-stretch: normal
+  font-weight:  normal
+  src: url("fonts/me_quran-webfont.woff") format("woff")
+@font-face
+  font-family: "naskh"
+  src: url("fonts/scheherazade-webfont.woff") format("woff")
+
+@font-face
+  font-family: "fantezy"
+  src: url("fonts/BFantezy.woff") format("woff")
 
 $primary-width:  700px
 $primary-color:  #fcf9f2
 
 body
-  width:      100%
-  float:      right
-  direction:  rtl
-  text-align: right
+  width:            100%
+  float:            right
+  direction:        rtl
+  text-align:       right
   background-color: #353739
 
 .header
@@ -26,9 +38,7 @@ body
   margin:           0 auto
   width:            100%
   background-color: $primary-color
-  padding:          50px 25px
-  font-family:      "othmany"
-  font-size:        34px
+  padding:          50px 5%
   text-align:       justify
   box-shadow:       0px 1px 5px gray
 
@@ -36,15 +46,20 @@ body
   width:            100%
 
 .ayah
-  line-height:      50px
+  line-height:      60px
+  font-family:      "naskh"
+  font-size:        2em
+  color:            #000
 
 .ayah-no
-  width:            55px
-  height:           55px
+  width:            30px
+  height:           30px
   display:          inline-block
   border:           1px dotted  gray
   padding:          0
+  font-family:      "fantezy"
+  font-size:        1em
   text-align:       center
-  line-height:      53px
+  line-height:      34px
   border-radius:    100%
   background-color: #fff
